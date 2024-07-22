@@ -2,12 +2,11 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-// import bsc1 from '/src/assets/2.brightsandcanada_images/2021-ColodialSeparation.jpg';
-// import bsc2 from '/src/assets/2.brightsandcanada_images/2021-CombustorTestMobileUnit.mp4';
-// import bsc3 from '/src/assets/2.brightsandcanada_images/2021-DrJudiBrightSandCanadaAqueosSolutionColodialSeparation.jpg';
-// import bsc4 from '/src/assets/2.brightsandcanada_images/2021-InitiatorTest.jpg';
-// import bsc5 from '/src/assets/2.brightsandcanada_images/2022-AlgaeBloomTestingBrightSandCanadaTest2.jpg';
-// import bsc6 from '/src/assets/2.brightsandcanada_images/2022-BSL1000_1.jpg';
+import bsc1 from '/src/assets/2.brightsandcanada_images/2021-ColodialSeparation.jpg';
+// import bsc2 from '/src/assets/2-brightsandcanada_images/2021-CombustorTestMobileUnit.mp4';
+import bsc3 from '/src/assets/2.brightsandcanada_images/2021-InitiatorTest.jpg';
+import bsc4 from '/src/assets/2.brightsandcanada_images/2022-AlgaeBloomTestingBrightSandCanadaTest2.jpg';
+import bsc5 from '/src/assets/2.brightsandcanada_images/2022-BSL1000_1.jpg';
 
 const BrightSandCanada = () => {
   return (
@@ -34,7 +33,7 @@ const BrightSandCanada = () => {
 
         <div className="p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10">
           <h2 className="text-3xl md:text-4xl text-gray-900 font-changa mb-6">
-            Current Projects
+            Our Patents and Innovations
           </h2>
           <div className="text-lg md:text-xl space-y-6 text-gray-800 font-roboto">
             <p>
@@ -76,6 +75,37 @@ const BrightSandCanada = () => {
               algae blooms, methane, and odor emissions from
               landfills.
             </p>
+          </div>
+          <div className="flex-1 md:p-8">
+            <Carousel
+              showThumbs={false}
+              infiniteLoop
+              useKeyboardArrows
+              autoPlay
+              className="bg-white rounded-lg shadow-xl"
+            >
+              <div className="carousel-item">
+                <img
+                  src={bsc1}
+                  alt="Aqueos Solution Colodial Separation"
+                />
+                <p className="legend">
+                  Aqueos Solution Colodial Separation (2021)
+                </p>
+              </div>
+              <div className="carousel-item">
+                <img src={bsc3} alt="Initiator Test" />
+                <p className="legend">Initiator Test (2021)</p>
+              </div>
+              <div className="carousel-item">
+                <img src={bsc4} alt="Algae Bloom Testing" />
+                <p className="legend">Algae Bloom Testing (2022)</p>
+              </div>
+              <div className="carousel-item">
+                <img src={bsc5} alt="BSL 1000" />
+                <p className="legend">BSL 1000 (2022)</p>
+              </div>
+            </Carousel>
           </div>
         </div>
 
