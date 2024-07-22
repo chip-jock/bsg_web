@@ -2,6 +2,15 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
+import bsii0 from '/src/assets/4.brightsandindustriesinc_images/bsii0.png';
+import bsii1 from '/src/assets/4.brightsandindustriesinc_images/bsii1.png';
+import bsii2 from '/src/assets/4.brightsandindustriesinc_images/bsii2.jpg';
+import bsii3 from '/src/assets/4.brightsandindustriesinc_images/bsii3.jpg';
+import bsii4 from '/src/assets/4.brightsandindustriesinc_images/bsii4.jpg';
+import bsii5 from '/src/assets/4.brightsandindustriesinc_images/bsii5.jpg';
+import bsii6 from '/src/assets/4.brightsandindustriesinc_images/bsii6.jpg';
+import bsii7 from '/src/assets/4.brightsandindustriesinc_images/bsii7.jpg';
+
 const BrightSandIndustriesInc = () => {
   return (
     <div className="relative flex flex-col justify-center items-center min-h-screen py-32 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
@@ -51,34 +60,56 @@ const BrightSandIndustriesInc = () => {
         </div>
 
         {/* Photo Carousel */}
-        {/* <div className="mt-10">
-          <Carousel showThumbs={false} infiniteLoop useKeyboardArrows autoPlay>
-            <div>
-              <img src="image1.jpg" alt="Description 1" />
+        <div className="flex flex-col">
+          <div className="text-lg md:text-xl p-6 md:p-10 bg-white rounded-lg shadow-xl mb-12 flex-1">
+            <h2 className="text-3xl md:text-4xl text-gray-900 font-changa mb-6">
+              Current Projects
+            </h2>
+            <div className="text-lg md:text-xl space-y-6 text-gray-800 font-roboto">
+              <p>
+                <span className="font-semibold">
+                  South Pacific Initiatives:
+                </span>{' '}
+                Collaborating with Pacific Environmental Solutions on
+                design-build systems for the Solomon Islands and other
+                South Pacific islands, providing sustainable waste
+                processing solutions.
+              </p>
+              <div className="flex-1 md:p-8">
+                <Carousel
+                  showThumbs={false}
+                  infiniteLoop
+                  useKeyboardArrows
+                  autoPlay
+                  className="bg-white rounded-lg shadow-xl"
+                >
+                  <div className="carousel-item">
+                    <img src={bsii0} alt="Project Image 1" />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={bsii1} alt="Project Image 2" />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={bsii2} alt="Project Image 3" />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={bsii3} alt="Project Image 4" />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={bsii4} alt="Project Image 5" />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={bsii5} alt="Project Image 6" />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={bsii6} alt="Project Image 7" />
+                  </div>
+                  <div className="carousel-item">
+                    <img src={bsii7} alt="Project Image 8" />
+                  </div>
+                </Carousel>
+              </div>
             </div>
-            <div>
-              <img src="image2.jpg" alt="Description 2" />
-            </div>
-            <div>
-              <img src="image3.jpg" alt="Description 3" />
-            </div>
-          </Carousel>
-        </div> */}
-
-        <div className="p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10">
-          <h2 className="text-3xl md:text-4xl text-gray-900 font-changa mb-6">
-            Current Projects
-          </h2>
-          <div className="text-lg md:text-xl space-y-6 text-gray-800 font-roboto">
-            <p>
-              <span className="font-semibold">
-                South Pacific Initiatives:
-              </span>{' '}
-              Collaborating with Pacific Environmental Solutions on
-              design-build systems for the Solomon Islands and other
-              South Pacific islands, providing sustainable waste
-              processing solutions.
-            </p>
           </div>
         </div>
 
