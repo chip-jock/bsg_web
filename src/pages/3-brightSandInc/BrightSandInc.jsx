@@ -1,6 +1,5 @@
 import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import bsi1 from '/src/assets/3.brightsandinc_images/2023-MultiPatent.jpg';
 
 const BrightSandInc = () => {
   return (
@@ -26,11 +25,11 @@ const BrightSandInc = () => {
           </p>
         </div>
 
-        <div className="p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10">
-          <h2 className="text-3xl md:text-4xl text-gray-900 font-changa mb-6">
-            Our Patents and Innovations
-          </h2>
-          <div className="text-lg md:text-xl space-y-6 text-gray-800 font-roboto">
+        <div className="p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10 flex flex-col md:flex-row">
+          <div className="text-lg md:text-xl space-y-6 text-gray-800 font-roboto md:w-1/2 align-middle">
+            <h2 className="text-3xl md:text-4xl text-gray-900 font-changa mb-6">
+              Our Patents and Innovations
+            </h2>
             <p>
               <span className="font-semibold">
                 Apparatus and Method for Producing Activated Carbon:
@@ -70,26 +69,9 @@ const BrightSandInc = () => {
               countries.
             </p>
           </div>
-        </div>
-
-        {/* Photo Carousel */}
-        <div className="mt-10">
-          <Carousel
-            showThumbs={false}
-            infiniteLoop
-            useKeyboardArrows
-            autoPlay
-          >
-            <div>
-              <img src="image1.jpg" alt="Description 1" />
-            </div>
-            <div>
-              <img src="image2.jpg" alt="Description 2" />
-            </div>
-            <div>
-              <img src="image3.jpg" alt="Description 3" />
-            </div>
-          </Carousel>
+          <div className="px-24 py-12 w-3/4 ">
+            <img src={bsi1} alt="" />
+          </div>
         </div>
 
         <div className="p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10">
