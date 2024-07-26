@@ -50,43 +50,22 @@ const Navbar = () => {
   return (
     <Disclosure
       as="nav"
-      className={`bg-gray-50 bg-opacity-80 tracking-wider fixed w-full z-20 transition-transform duration-300 font-changa ${
-        showNav ? 'translate-y-0' : '-translate-y-full'
-      }`}
+      className="bg-gray-100 tracking-wider fixed w-full sm:w-80 sm:h-full sm:fixed sm:top-0 sm:left-0 z-20 transition-transform duration-300 font-changa"
     >
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-9xl px-2 sm:px-6 lg:px-8">
-            <div className="relative flex h-16 items-center justify-between">
-              <div className="flex">
-                <div className="flex-shrink-0">
-                  <h1 className="text-3xl text-gray-500 tracking-tight">
-                    <a href="/">Bright Sand Group</a>
-                  </h1>
-                </div>
+          <div
+            className={`sm:flex sm:flex-col h-full w-full sm:w-80 transition-transform duration-300 ${
+              showNav ? 'translate-x-0' : '-translate-x-full'
+            }`}
+          >
+            <div className="flex items-center justify-between px-4 py-4 sm:flex-col sm:items-start sm:justify-start whitespace-nowrap">
+              <div className="flex-shrink-0 min-w-0">
+                <h1 className="text-3xl text-black tracking-tight overflow-hidden text-ellipsis">
+                  <a href="/">Bright Sand Group</a>
+                </h1>
               </div>
-              <div className="hidden sm:flex sm:items-center sm:space-x-4">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className={classNames(
-                      location.pathname === item.href
-                        ? 'bg-gray-400 text-gray-200'
-                        : 'text-gray-400 hover:bg-gray-100 hover:gray-400',
-                      'px-3 py-2 rounded-md text-lg font-light'
-                    )}
-                    aria-current={
-                      location.pathname === item.href
-                        ? 'page'
-                        : undefined
-                    }
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-              <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+              <div className="sm:hidden">
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   {open ? (
                     <XMarkIcon
@@ -102,6 +81,29 @@ const Navbar = () => {
                 </Disclosure.Button>
               </div>
             </div>
+            <div className="hidden sm:flex sm:flex-col sm:flex-grow sm:overflow-y-auto">
+              <div className="px-4">
+                {navigation.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={classNames(
+                      location.pathname === item.href
+                        ? 'bg-gray-400 text-gray-200'
+                        : 'text-black hover:bg-gray-200 hover:gray-400',
+                      'block px-3 py-2 rounded-md text-lg font-light whitespace-nowrap'
+                    )}
+                    aria-current={
+                      location.pathname === item.href
+                        ? 'page'
+                        : undefined
+                    }
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
 
           <Disclosure.Panel className="sm:hidden">
@@ -115,7 +117,7 @@ const Navbar = () => {
                     location.pathname === item.href
                       ? 'bg-gray-400 text-gray-200'
                       : 'text-gray-400 hover:bg-gray-100 hover:gray-400',
-                    'block px-3 py-2 rounded-md text-base'
+                    'block px-3 py-2 rounded-md text-base whitespace-nowrap'
                   )}
                   aria-current={
                     location.pathname === item.href
