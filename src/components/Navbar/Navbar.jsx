@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <Disclosure
       as="nav"
-      className="bg-gray-100 tracking-wider fixed w-full sm:w-80 sm:h-full sm:fixed sm:top-0 sm:left-0 z-20 transition-transform duration-300 font-changa"
+      className="bg-gray-50 tracking-wider fixed w-full sm:w-80 sm:h-full sm:fixed sm:top-0 sm:left-0 z-20 transition-transform duration-300 font-changa"
     >
       {({ open }) => (
         <>
@@ -89,7 +89,7 @@ const Navbar = () => {
                     to={item.href}
                     className={classNames(
                       location.pathname === item.href
-                        ? 'bg-gray-400 text-gray-200'
+                        ? 'bg-gray-300 text-gray-100'
                         : 'text-black hover:bg-gray-200 hover:gray-400',
                       'block px-3 py-2 rounded-md text-lg font-light whitespace-nowrap'
                     )}
