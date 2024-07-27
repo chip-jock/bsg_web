@@ -10,6 +10,7 @@ import Company from './pages/1-company/Company.jsx';
 import BrightSandCanada from './pages/2-brightSandCanada/BrightSandCanada.jsx';
 import BrightSandInc from './pages/3-brightSandInc/BrightSandInc.jsx';
 import BrightSandIndustriesInc from './pages/4-brightSandIndustriesInc/BrightSandIndustriesInc.jsx';
+import WhitePapers from './pages/5-whitePapers/WhitePapers.jsx';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             path="/brightsandindustriesinc"
             element={<BrightSandIndustriesInc />}
           />
+          <Route path="/whitepapers" element={<WhitePapers />} />
         </Routes>
       </Router>
     </div>

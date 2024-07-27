@@ -10,7 +10,7 @@ import bsc5 from '/src/assets/2.brightsandcanada_images/2022-BSL1000_1.jpg';
 
 const BrightSandCanada = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center min-h-screen py-32 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
+    <div className="relative flex flex-col justify-center items-center min-h-screen py-12 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
       <div className="w-full max-w-6xl">
         <div className="text-center mb-8">
           <h1 className="text-5xl md:text-6xl lg:text-7xl text-gray-900 font-montserrat text-left tracking-tighter">

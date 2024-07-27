@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
-  { name: 'Company', href: '/company', current: false },
   {
     name: 'Bright Sand Canada',
     href: '/brightsandcanada',
@@ -20,6 +19,9 @@ const navigation = [
     href: '/brightsandindustriesinc',
     current: false,
   },
+  { name: 'divider', divider: true }, // Divider entry
+  { name: 'Company History', href: '/company', current: false },
+  // { name: 'White Papers', href: '/whitepapers', current: false },
 ];
 
 function classNames(...classes) {
@@ -27,112 +29,109 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
-  const [showNav, setShowNav] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
   const location = useLocation();
 
-  const controlNavbar = () => {
-    if (window.scrollY > lastScrollY) {
-      setShowNav(false);
-    } else {
-      setShowNav(true);
-    }
-    setLastScrollY(window.scrollY);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', controlNavbar);
-    return () => {
-      window.removeEventListener('scroll', controlNavbar);
-    };
-  }, [lastScrollY]);
-
   return (
-    <Disclosure
-      as="nav"
-      className="bg-gray-50 tracking-wider fixed w-full sm:w-80 sm:h-full sm:fixed sm:top-0 sm:left-0 z-20 transition-transform duration-300 font-changa"
-    >
-      {({ open }) => (
-        <>
-          <div
-            className={`sm:flex sm:flex-col h-full w-full sm:w-80 transition-transform duration-300 ${
-              showNav ? 'translate-x-0' : '-translate-x-full'
-            }`}
-          >
-            <div className="flex items-center justify-between px-4 py-4 sm:flex-col sm:items-start sm:justify-start whitespace-nowrap">
-              <div className="flex-shrink-0 min-w-0">
-                <h1 className="text-3xl text-black tracking-tight overflow-hidden text-ellipsis">
-                  <a href="/">Bright Sand Group</a>
-                </h1>
+    <>
+      {/* Vertical Navbar for xl and larger screens */}
+      <div className="fixed top-0 left-0 w-full lg:w-80 lg:h-full z-20 bg-gray-50 transition-transform duration-300">
+        <Disclosure as="nav" className="tracking-wider font-changa">
+          {({ open }) => (
+            <>
+              <div className="lg:flex lg:flex-col h-full w-full lg:w-80">
+                <div className="flex items-center justify-between px-4 py-4 lg:flex-col lg:items-start lg:justify-start whitespace-nowrap">
+                  <div className="flex-shrink-0 min-w-0">
+                    <h1 className="text-3xl text-black tracking-tight overflow-hidden text-ellipsis">
+                      <a href="/">Bright Sand Group</a>
+                    </h1>
+                  </div>
+                  <div className="lg:hidden">
+                    <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                      {open ? (
+                        <XMarkIcon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <Bars3Icon
+                          className="block h-6 w-6"
+                          aria-hidden="true"
+                        />
+                      )}
+                    </Disclosure.Button>
+                  </div>
+                </div>
+                <div className="hidden lg:flex lg:flex-col lg:flex-grow lg:overflow-y-auto">
+                  <div className="px-4">
+                    {navigation.map((item, index) => (
+                      <React.Fragment key={item.name}>
+                        {item.divider ? (
+                          <div className="my-2 border-t border-gray-300" />
+                        ) : (
+                          <Link
+                            to={item.href}
+                            className={classNames(
+                              location.pathname === item.href
+                                ? 'bg-gray-300 text-gray-100'
+                                : 'text-black hover:bg-gray-200 hover:gray-400',
+                              'block px-3 py-2 rounded-md text-lg font-light whitespace-nowrap'
+                            )}
+                            aria-current={
+                              location.pathname === item.href
+                                ? 'page'
+                                : undefined
+                            }
+                          >
+                            {item.name}
+                          </Link>
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </div>
+                </div>
               </div>
-              <div className="sm:hidden">
-                <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-                  {open ? (
-                    <XMarkIcon
-                      className="block h-6 w-6"
-                      aria-hidden="true"
-                    />
-                  ) : (
-                    <Bars3Icon
-                      className="block h-6 w-6"
-                      aria-hidden="true"
-                    />
-                  )}
-                </Disclosure.Button>
-              </div>
-            </div>
-            <div className="hidden sm:flex sm:flex-col sm:flex-grow sm:overflow-y-auto">
-              <div className="px-4">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className={classNames(
-                      location.pathname === item.href
-                        ? 'bg-gray-300 text-gray-100'
-                        : 'text-black hover:bg-gray-200 hover:gray-400',
-                      'block px-3 py-2 rounded-md text-lg font-light whitespace-nowrap'
-                    )}
-                    aria-current={
-                      location.pathname === item.href
-                        ? 'page'
-                        : undefined
-                    }
-                  >
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
 
-          <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 px-2 pb-3 pt-2">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as={Link}
-                  to={item.href}
-                  className={classNames(
-                    location.pathname === item.href
-                      ? 'bg-gray-400 text-gray-200'
-                      : 'text-gray-400 hover:bg-gray-100 hover:gray-400',
-                    'block px-3 py-2 rounded-md text-base whitespace-nowrap'
-                  )}
-                  aria-current={
-                    location.pathname === item.href
-                      ? 'page'
-                      : undefined
-                  }
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
+              {/* Mobile Navbar for screens up to lg */}
+              <Disclosure.Panel className="lg:hidden">
+                <div className="flex flex-col bg-gray-50 space-y-1 px-2 pb-3 pt-2">
+                  <div className="flex items-center justify-between "></div>
+                  <div className="space-y-1">
+                    {navigation.map((item, index) => (
+                      <React.Fragment key={item.name}>
+                        {item.divider ? (
+                          <div className="my-2 border-t border-gray-300" />
+                        ) : (
+                          <Disclosure.Button
+                            as={Link}
+                            to={item.href}
+                            className={classNames(
+                              location.pathname === item.href
+                                ? 'bg-gray-400 text-gray-200'
+                                : 'text-gray-400 hover:bg-gray-100 hover:gray-400',
+                              'block px-3 py-2 rounded-md text-base whitespace-nowrap'
+                            )}
+                            aria-current={
+                              location.pathname === item.href
+                                ? 'page'
+                                : undefined
+                            }
+                          >
+                            {item.name}
+                          </Disclosure.Button>
+                        )}
+                      </React.Fragment>
+                    ))}
+                  </div>
+                </div>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+      </div>
+      <div className="pt-16 lg:pt-0 lg:pl-80">
+        {/* This div reserves space for the navbar */}
+      </div>
+    </>
   );
 };
 
