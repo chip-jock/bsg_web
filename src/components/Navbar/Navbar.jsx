@@ -2,6 +2,7 @@ import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Link, useLocation } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Logo from '/src/assets/bsg-logo-nobg2.png';
 
 const navigation = [
   {
@@ -21,7 +22,7 @@ const navigation = [
   },
   { name: 'divider', divider: true }, // Divider entry
   { name: 'Company History', href: '/company', current: false },
-  // { name: 'White Papers', href: '/whitepapers', current: false },
+  { name: 'White Papers', href: '/whitepapers', current: false },
 ];
 
 function classNames(...classes) {
@@ -39,10 +40,17 @@ const Navbar = () => {
           {({ open }) => (
             <>
               <div className="lg:flex lg:flex-col h-full w-full lg:w-80">
-                <div className="flex items-center justify-between px-4 py-4 lg:flex-col lg:items-start lg:justify-start whitespace-nowrap">
-                  <div className="flex-shrink-0 min-w-0">
-                    <h1 className="text-3xl text-black tracking-tight overflow-hidden text-ellipsis">
-                      <a href="/">Bright Sand Group</a>
+                <div className="flex items-center justify-between px-4 lg:flex-col lg:items-start lg:justify-start whitespace-nowrap">
+                  <div className="flex-shrink-0 min-w-0 flex flex-row items-center">
+                    <a href="/">
+                      <img
+                        src={Logo}
+                        alt="Logo"
+                        className="w-16 h-16 object-contain cursor-pointer" // Adjust width and height
+                      />
+                    </a>
+                    <h1 className="text-xl text-black tracking-tight overflow-hidden text-ellipsis ml-2">
+                      Bright Sand Group
                     </h1>
                   </div>
                   <div className="lg:hidden">
@@ -106,9 +114,9 @@ const Navbar = () => {
                             to={item.href}
                             className={classNames(
                               location.pathname === item.href
-                                ? 'bg-gray-400 text-gray-200'
-                                : 'text-gray-400 hover:bg-gray-100 hover:gray-400',
-                              'block px-3 py-2 rounded-md text-base whitespace-nowrap'
+                                ? 'bg-gray-300 text-gray-100'
+                                : 'text-black hover:bg-gray-200 hover:gray-400',
+                              'block px-3 py-2 rounded-md text-lg font-light whitespace-nowrap'
                             )}
                             aria-current={
                               location.pathname === item.href
