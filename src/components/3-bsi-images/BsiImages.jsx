@@ -5,7 +5,7 @@ import bsi0 from '/src/assets/3.brightsandinc_images/2021-0-carbon-black-global-
 import bsi1 from '/src/assets/3.brightsandinc_images/2022-1-carbon-black-global-holdings-landaira-plant-dunlap.webp';
 import bsi2 from '/src/assets/3.brightsandinc_images/2022-2-carbon-black-global-holdings-landaira-plant-dunlap.webp';
 import bsi3 from '/src/assets/3.brightsandinc_images/2022-3-carbon-black-global-holdings-landaira-plant-dunlap.webp';
-import bsi4 from '/src/assets/3.brightsandinc_images/2023-multi-patent-1.webp';
+import bsi4 from '/src/assets/3.brightsandinc_images/2023-4-multi-patent.webp';
 
 // Image descriptions
 const descriptions = {
