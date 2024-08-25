@@ -1,23 +1,15 @@
 import React from 'react';
 import Navbar from '/src/components/Navbar/Navbar.jsx'; // Import the Navbar component
-import { Carousel } from 'react-responsive-carousel';
+// import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-
-import bsii0 from '/src/assets/4.brightsandindustriesinc_images/bsii0.png';
-import bsii1 from '/src/assets/4.brightsandindustriesinc_images/bsii1.png';
-import bsii2 from '/src/assets/4.brightsandindustriesinc_images/bsii2.jpg';
-import bsii3 from '/src/assets/4.brightsandindustriesinc_images/bsii3.jpg';
-import bsii4 from '/src/assets/4.brightsandindustriesinc_images/bsii4.jpg';
-import bsii5 from '/src/assets/4.brightsandindustriesinc_images/bsii5.jpg';
-import bsii6 from '/src/assets/4.brightsandindustriesinc_images/bsii6.jpg';
-import bsii7 from '/src/assets/4.brightsandindustriesinc_images/bsii7.jpg';
+import BsiiImages from '/src/components/4-bsii-images/BsiiImages.jsx';
 
 const BrightSandIndustriesInc = () => {
   return (
     <div className="flex">
       <Navbar /> {/* Add the Navbar component */}
       <div className="flex-grow flex flex-col justify-center items-center min-h-screen py-12 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
-        <div className="w-full max-w-6xl">
+        <div className="w-full max-w-7xl">
           <div className="text-center mb-8">
             <h1 className="text-5xl md:text-6xl lg:text-7xl text-gray-900 font-montserrat text-left tracking-tighter">
               Bright Sand Industries Inc.
@@ -80,7 +72,8 @@ const BrightSandIndustriesInc = () => {
                   waste processing solutions.
                 </p>
                 <div className="flex-1 md:p-8">
-                  <Carousel
+                  <BsiiImages />
+                  {/* <Carousel
                     showThumbs={false}
                     infiniteLoop
                     useKeyboardArrows
@@ -108,10 +101,7 @@ const BrightSandIndustriesInc = () => {
                     <div className="carousel-item">
                       <img src={bsii6} alt="Project Image 7" />
                     </div>
-                    <div className="carousel-item">
-                      <img src={bsii7} alt="Project Image 8" />
-                    </div>
-                  </Carousel>
+                  </Carousel> */}
                 </div>
               </div>
             </div>

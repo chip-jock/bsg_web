@@ -2,9 +2,11 @@ import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { Link, useLocation } from 'react-router-dom';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import Logo from '/src/assets/bsg-logo-nobg2.png';
+import Logo from '/src/assets/bsg-logo-nobg.png';
 
 const navigation = [
+  { name: 'Company History', href: '/company', current: false },
+  { name: 'divider-0', divider: true }, // Divider entry
   {
     name: 'Bright Sand Canada',
     href: '/brightsandcanada',
@@ -20,8 +22,8 @@ const navigation = [
     href: '/brightsandindustriesinc',
     current: false,
   },
-  { name: 'divider', divider: true }, // Divider entry
-  { name: 'Company History', href: '/company', current: false },
+  { name: 'divider-1', divider: true }, // Divider entry
+
   { name: 'White Papers', href: '/whitepapers', current: false },
 ];
 
@@ -49,9 +51,11 @@ const Navbar = () => {
                         className="w-16 h-16 object-contain cursor-pointer" // Adjust width and height
                       />
                     </a>
-                    <h1 className="text-xl text-black tracking-tight overflow-hidden text-ellipsis ml-2">
-                      Bright Sand Group
-                    </h1>
+                    <a href="/">
+                      <h1 className="text-2xl text-black tracking-tight overflow-hidden text-ellipsis ml-2">
+                        Bright Sand Group
+                      </h1>
+                    </a>
                   </div>
                   <div className="lg:hidden">
                     <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">

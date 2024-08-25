@@ -1,13 +1,13 @@
 import React from 'react';
 import Navbar from '/src/components/Navbar/Navbar.jsx'; // Import the Navbar component
-import bsi1 from '/src/assets/3.brightsandinc_images/2023-MultiPatent.jpg';
+import BsiImages from '/src/components/3-bsi-images/BsiImages.jsx';
 
 const BrightSandInc = () => {
   return (
     <div className="flex">
       <Navbar /> {/* Add the Navbar component */}
       <div className="flex-grow flex flex-col justify-center items-center min-h-screen py-12 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
-        <div className="w-full max-w-6xl">
+        <div className="w-full max-w-7xl">
           <div className="text-center mb-8">
             <h1 className="text-5xl md:text-6xl lg:text-7xl text-gray-900 font-montserrat text-left tracking-tighter">
               Bright Sand Inc.
@@ -73,8 +73,8 @@ const BrightSandInc = () => {
                 countries.
               </p>
             </div>
-            <div className="px-24 py-12 w-3/4 ">
-              <img src={bsi1} alt="Multi-Patent Innovations" />
+            <div className="flex-1 md:p-8">
+              <BsiImages />
             </div>
           </div>
 

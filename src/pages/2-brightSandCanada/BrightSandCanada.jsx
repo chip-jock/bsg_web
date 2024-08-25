@@ -2,19 +2,14 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Navbar from '/src/components/Navbar/Navbar'; // Import the Navbar component
-
-import bsc1 from '/src/assets/2.brightsandcanada_images/2021-ColodialSeparation.jpg';
-// import bsc2 from '/src/assets/2-brightsandcanada_images/2021-CombustorTestMobileUnit.mp4';
-import bsc3 from '/src/assets/2.brightsandcanada_images/2021-InitiatorTest.jpg';
-import bsc4 from '/src/assets/2.brightsandcanada_images/2022-AlgaeBloomTestingBrightSandCanadaTest2.jpg';
-import bsc5 from '/src/assets/2.brightsandcanada_images/2022-BSL1000_1.jpg';
+import BscImages from '/src/components/2-bsc-images/BscImages.jsx';
 
 const BrightSandCanada = () => {
   return (
     <div className="flex">
       <Navbar /> {/* Add the Navbar component */}
       <div className="flex-grow flex flex-col justify-center items-center min-h-screen py-12 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
-        <div className="w-full max-w-6xl">
+        <div className="w-full max-w-7xl">
           <div className="text-center mb-8">
             <h1 className="text-5xl md:text-6xl lg:text-7xl text-gray-900 font-montserrat text-left tracking-tighter">
               Bright Sand Canada
@@ -81,35 +76,7 @@ const BrightSandCanada = () => {
               </p>
             </div>
             <div className="flex-1 md:p-8">
-              <Carousel
-                showThumbs={false}
-                infiniteLoop
-                useKeyboardArrows
-                autoPlay
-                className="bg-white rounded-lg shadow-xl"
-              >
-                <div className="carousel-item">
-                  <img
-                    src={bsc1}
-                    alt="Aqueous Solution Colloidal Separation"
-                  />
-                  <p className="legend">
-                    Aqueous Solution Colloidal Separation (2021)
-                  </p>
-                </div>
-                <div className="carousel-item">
-                  <img src={bsc3} alt="Initiator Test" />
-                  <p className="legend">Initiator Test (2021)</p>
-                </div>
-                <div className="carousel-item">
-                  <img src={bsc4} alt="Algae Bloom Testing" />
-                  <p className="legend">Algae Bloom Testing (2022)</p>
-                </div>
-                <div className="carousel-item">
-                  <img src={bsc5} alt="BSL 1000" />
-                  <p className="legend">BSL 1000 (2022)</p>
-                </div>
-              </Carousel>
+              <BscImages />
             </div>
           </div>
 
