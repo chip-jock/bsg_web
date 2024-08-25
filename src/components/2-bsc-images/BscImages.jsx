@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 
 // Image imports
-import bsc0 from '/src/assets/2.brightsandcanada_images/0-bsl-1000.1.webp';
-import bsc1 from '/src/assets/2.brightsandcanada_images/1-aqueous-solution-colloidal-separation.webp';
+import bsc0 from '/src/assets/2.brightsandcanada_images/0-aqueous-solution-colloidal-separation.webp';
+import bsc1 from '/src/assets/2.brightsandcanada_images/1-bsl-1000.1.webp';
 import bsc2 from '/src/assets/2.brightsandcanada_images/2-algae-bloom-testing.webp';
-import bsc3 from '/src/assets/2.brightsandcanada_images/3-engineered-carbon.webp';
+import bsc3 from '/src/assets/2.brightsandcanada_images/3-algae-bloom-testing.webp';
 import bsc4 from '/src/assets/2.brightsandcanada_images/4-initiator-test.webp';
+import bsc5 from '/src/assets/2.brightsandcanada_images/5-engineered-carbon.webp';
+import bsc6 from '/src/assets/2.brightsandcanada_images/6-butter-nut-canker.webp';
 
 // Image descriptions
 const descriptions = {
-  bsc0: 'bsl-1000.1 (2022)',
-  bsc1: 'Aqueous Solution Colloidal Separation (2021)',
+  bsc0: 'Aqueous Solution Colloidal Separation (2021)',
+  bsc1: 'bsl-1000.1 (2022)',
   bsc2: 'Algae Bloom Testing (2022)',
-  bsc3: 'Engineered Carbon',
+  bsc3: 'Algae Bloom Testing (2022)',
   bsc4: 'Initiator Test (2022)',
+  bsc5: 'Engineered Carbon',
+  bsc6: 'Butter Nut Canker',
 };
 
 export function BscImages() {
@@ -27,6 +31,8 @@ export function BscImages() {
         { imageLink: bsc2, description: descriptions.bsc2 },
         { imageLink: bsc3, description: descriptions.bsc3 },
         { imageLink: bsc4, description: descriptions.bsc4 },
+        { imageLink: bsc5, description: descriptions.bsc5 },
+        { imageLink: bsc6, description: descriptions.bsc6 },
       ],
     },
   ];

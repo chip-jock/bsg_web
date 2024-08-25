@@ -1,30 +1,48 @@
 import React from 'react';
 import Navbar from '/src/components/Navbar/Navbar.jsx';
-import WP1 from '/src/assets/5.whitepapers_pdfs/aqueous-solution-algae-blooms.pdf';
-import WP2 from '/src/assets/5.whitepapers_pdfs/butter-nut-tree.pdf';
-import WP3 from '/src/assets/5.whitepapers_pdfs/landfill-methane-odor.pdf';
-import WP4 from '/src/assets/5.whitepapers_pdfs/water-separation.pdf';
+
+import wp0 from '/src/assets/5.whitepapers_pdfs/0-aqueous-solution-algae-blooms.pdf';
+import wp1 from '/src/assets/5.whitepapers_pdfs/1-butter-nut-tree.pdf';
+import wp2 from '/src/assets/5.whitepapers_pdfs/2-landfill-methane-odor.pdf';
+import wp3 from '/src/assets/5.whitepapers_pdfs/3-water-separation.pdf';
+import wp4 from '/src/assets/5.whitepapers_pdfs/4-bsg-engineered-carbon-black.pdf';
+import wp5 from '/src/assets/5.whitepapers_pdfs/5-exploring-the-versatility-of-bright-sands-engineered-carbon.pdf';
+import wp6 from '/src/assets/5.whitepapers_pdfs/6-the-patented-process-behind-engineered-carbon-bright-sand.pdf';
 
 const whitePapers = [
   {
-    href: WP1,
+    href: wp0,
     title:
       'Utilizing Bright Sand Aqueous Solution for Algae Bloom Prevention and Control',
   },
   {
-    href: WP2,
+    href: wp1,
     title:
       'Utilizing Bright Sand Aqueous Solution for Canker Sore Treatment in Trees',
   },
   {
-    href: WP3,
+    href: wp2,
     title:
       'Utilizing Bright Sand Aqueous Solution to Reduce Methane, Odor Production from Landfills',
   },
   {
-    href: WP4,
+    href: wp3,
     title:
       'Utilizing Bright Sand Aqueous Solution for Enhanced Water Separation from Colloidal Clay Samples',
+  },
+  {
+    href: wp4,
+    title: 'Bright Sand Group Engineered Carbon Black',
+  },
+  {
+    href: wp5,
+    title:
+      'Exploring the Versatility of Bright Sands Engineered Carbon',
+  },
+  {
+    href: wp6,
+    title:
+      'The Patented Process Behind Engineered Carbon Bright Sand',
   },
 ];
 
