@@ -9,11 +9,11 @@ import bsi4 from '/src/assets/3.brightsandinc_images/2023-multi-patent-1.webp';
 
 // Image descriptions
 const descriptions = {
-  bsi0: '',
-  bsi1: '',
-  bsi2: '',
-  bsi3: '',
-  bsi4: '',
+  bsi0: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
+  bsi1: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
+  bsi2: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
+  bsi3: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
+  bsi4: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
 };
 
 export function BsiImages() {

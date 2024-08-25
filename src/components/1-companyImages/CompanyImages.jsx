@@ -8,69 +8,69 @@ import {
 import React, { useState } from 'react';
 
 // Image imports
-import bsg0 from '/src/assets/1.company_images/2012-0-humble-beginnings-first-reactor.webp';
-import bsg1 from '/src/assets/1.company_images/2012-1-first-reactor.webp';
-import bsg2 from '/src/assets/1.company_images/2012-2-first-wet-scrubber.webp';
-import bsg3 from '/src/assets/1.company_images/2012-3-first-bag-of-msw.webp';
-// import bsg4 from '/src/assets/1.company_images/2012-4-syngas-flare.mp4';
-import bsg5 from '/src/assets/1.company_images/2012-5-first-bag-of-activated-carbon.webp';
-import bsg6 from '/src/assets/1.company_images/2012-6-first-post-process.webp';
-import bsg7 from '/src/assets/1.company_images/2012-7-reactor-system-continuous-improvement.webp';
-import bsg8 from '/src/assets/1.company_images/2013-0-first-mix-msw-and-tire.webp';
-import bsg9 from '/src/assets/1.company_images/2013-1-reactor.webp';
-import bsg10 from '/src/assets/1.company_images/2014-0-first-asr-auto-scrap-residual.webp';
-import bsg11 from '/src/assets/1.company_images/2016-0-filter-and-heat-exchange.webp';
-import bsg12 from '/src/assets/1.company_images/2016-0-full-scale-plant-development-dunlap.webp';
-import bsg13 from '/src/assets/1.company_images/2016-1-full-scale-plant-development-dunlap.webp';
-import bsg14 from '/src/assets/1.company_images/2016-2-full-scale-plant-development-dunlap.webp';
-import bsg15 from '/src/assets/1.company_images/2016-3-full-scale-plant-dunlap.webp';
-import bsg16 from '/src/assets/1.company_images/2016-4-full-scale-plant-dunlap.webp';
-import bsg17 from '/src/assets/1.company_images/2016-5-full-scale-plant-dunlap.webp';
-import bsg18 from '/src/assets/1.company_images/2016-6-process-automation.webp';
-import bsg19 from '/src/assets/1.company_images/2016-7-reactor-upgrade-mobile-unit-dunlap.webp';
-import bsg20 from '/src/assets/1.company_images/2016-8-scrubber.webp';
-import bsg21 from '/src/assets/1.company_images/2016-9-scrubber-upgrades.webp';
-import bsg22 from '/src/assets/1.company_images/2017-0-activated-carbon-dunlap.webp';
-import bsg23 from '/src/assets/1.company_images/2017-1-bamboo-dunlap.webp';
-import bsg24 from '/src/assets/1.company_images/2017-2-control-room.webp';
-import bsg25 from '/src/assets/1.company_images/2017-3-first-activated-carbon-process-full-scale.webp';
-import bsg26 from '/src/assets/1.company_images/2017-4-first-msw-process-full-scale.webp';
-import bsg27 from '/src/assets/1.company_images/2017-5-full-scale-plant.webp';
-import bsg28 from '/src/assets/1.company_images/2017-6-full-scale-plant.webp';
-import bsg29 from '/src/assets/1.company_images/2017-7-msw-residual.webp';
+import bsg0 from '/src/assets/1.company_images/0-2012-0-first-reactor.webp';
+import bsg1 from '/src/assets/1.company_images/0-2012-1-first-reactor.webp';
+import bsg2 from '/src/assets/1.company_images/0-2012-2-first-wet-scrubber.webp';
+import bsg3 from '/src/assets/1.company_images/0-2012-3-first-bag-of-msw.webp';
+import bsg4 from '/src/assets/1.company_images/0-2012-4-first-bag-of-activated-carbon.webp';
+import bsg5 from '/src/assets/1.company_images/0-2012-5-first-post-process.webp';
+import bsg6 from '/src/assets/1.company_images/0-2012-6-reactor-system-continuous-improvement.webp';
+import bsg7 from '/src/assets/1.company_images/0-2013-0-first-mix-msw-and-tire.webp';
+import bsg8 from '/src/assets/1.company_images/0-2013-1-reactor.webp';
+import bsg9 from '/src/assets/1.company_images/0-2014-0-first-asr-auto-scrap-residual.webp';
+import bsg10 from '/src/assets/1.company_images/0-2016-0-filter-and-heat-exchange.webp';
+import bsg11 from '/src/assets/1.company_images/1-2016-7-reactor-upgrade-mobile-unit-dunlap.webp';
+import bsg12 from '/src/assets/1.company_images/2-2016-0-full-scale-plant-development-dunlap.webp';
+import bsg13 from '/src/assets/1.company_images/2-2016-1-full-scale-plant-development-dunlap.webp';
+import bsg14 from '/src/assets/1.company_images/2-2016-2-full-scale-plant-development-dunlap.webp';
+import bsg15 from '/src/assets/1.company_images/2-2016-3-full-scale-plant-development-dunlap.webp';
+import bsg16 from '/src/assets/1.company_images/2-2016-4-full-scale-plant-development-dunlap.webp';
+import bsg17 from '/src/assets/1.company_images/2-2016-5-full-scale-plant-development-dunlap.webp';
+import bsg18 from '/src/assets/1.company_images/2-2016-6-process-automation.webp';
+import bsg19 from '/src/assets/1.company_images/2-2016-8-scrubber.webp';
+import bsg20 from '/src/assets/1.company_images/2-2017-0-activated-carbon-dunlap.webp';
+import bsg21 from '/src/assets/1.company_images/2-2017-1-bamboo-dunlap.webp';
+import bsg22 from '/src/assets/1.company_images/2-2017-3-first-activated-carbon-process-full-scale.webp';
+import bsg23 from '/src/assets/1.company_images/2-2017-4-first-msw-process-full-scale.webp';
+import bsg24 from '/src/assets/1.company_images/2-2017-5-full-scale-plant.webp';
+import bsg25 from '/src/assets/1.company_images/2-2017-6-full-scale-plant.webp';
+import bsg26 from '/src/assets/1.company_images/2-2017-7-msw-residual.webp';
+import bsg27 from '/src/assets/1.company_images/2-2021-0-carbon-black-global-holdings-landaira-plant-dunlap.webp';
+import bsg28 from '/src/assets/1.company_images/2-2022-1-carbon-black-global-holdings-landaira-plant-dunlap.webp';
+import bsg29 from '/src/assets/1.company_images/2-2022-2-carbon-black-global-holdings-landaira-plant-dunlap.webp';
 
 // Image descriptions
 const descriptions = {
-  bsg0: 'Humble Beginnings: First Reactor (2012)',
+  bsg0: 'First Reactor (2012)',
   bsg1: 'First Reactor (2012)',
   bsg2: 'First Wet Scrubber (2012)',
   bsg3: 'First Bag of MSW (2012)',
-  // bsg4: 'Syngas Flare (2012)',
-  bsg5: 'First Bag of Activated Carbon (2012)',
-  bsg6: 'First Post Process (2012)',
-  bsg7: 'Reactor System Continuous Improvement (2012)',
-  bsg8: 'First Mix MSW and Tires (2013)',
-  bsg9: 'Reactor (2013)',
-  bsg10: 'First ASR Auto Scrap Residual (2014)',
-  bsg11: 'Filter and Heat Exchange (2016)',
+  bsg4: 'First Bag of Activated Carbon (2012)',
+  bsg5: 'First Post Process (2012)',
+  bsg6: 'Reactor System Continuous Improvement (2012)',
+  bsg7: 'First Mix MSW and Tires (2013)',
+  bsg8: 'Reactor (2013)',
+  bsg9: 'First ASR Auto Scrap Residual (2014)',
+  bsg10: 'Filter and Heat Exchange (2016)',
+  bsg11: 'Upgraded Mobile Reactor Unit, Dunlap (2016)',
   bsg12: 'Full Scale Plant Development, Dunlap (2016)',
   bsg13: 'Full Scale Plant Development, Dunlap (2016)',
   bsg14: 'Full Scale Plant Development, Dunlap (2016)',
-  bsg15: 'Full Scale Plant, Dunlap (2016)',
-  bsg16: 'Full Scale Plant, Dunlap (2016)',
-  bsg17: 'Full Scale Plant, Dunlap (2016)',
+  bsg15: 'Full Scale Plant Development, Dunlap (2016)',
+  bsg16: 'Full Scale Plant Development, Dunlap (2016)',
+  bsg17: 'Full Scale Plant Development, Dunlap (2016)',
   bsg18: 'Process Automation (2016)',
-  bsg19: 'Upgraded Mobile Reactor Unit, Dunlap (2016)',
-  bsg20: 'Scrubber (2016)',
-  bsg21: 'Scrubber Upgrades (2016)',
-  bsg22: 'Activated Carbon, Dunlap (2017)',
-  bsg23: 'Bamboo (2017)',
-  bsg24: 'Control Room, Dunlap (2017)',
-  bsg25: 'First Full Scale Activated Carbon Process (2017)',
-  bsg26: 'First Full Scale MSW Process (2017)',
-  bsg27: 'Full Scale Process (2017)',
-  bsg28: 'Full Scale Plant (2017)',
-  bsg29: 'MSW Residual (2017)',
+  bsg19: 'Scrubber (2016)',
+  bsg20: 'Activated Carbon, Dunlap (2017)',
+  bsg21: 'Bamboo, Dunlap (2017)',
+  bsg22: 'First Full Scale Activated Carbon Process, Dunlap (2017)',
+  bsg23: 'First Full Scale MSW Process, Dunlap (2017)',
+  bsg24: 'Full Scale Process, Dunlap (2017)',
+  bsg25: 'Full Scale Plant, Dunlap (2017)',
+  bsg26: 'MSW Residual, Dunlap (2017)',
+  bsg27: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
+  bsg28: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
+  bsg29: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
 };
 
 export function CompanyImages() {
@@ -87,32 +87,32 @@ export function CompanyImages() {
         { imageLink: bsg1, description: descriptions.bsg1 },
         { imageLink: bsg2, description: descriptions.bsg2 },
         { imageLink: bsg3, description: descriptions.bsg3 },
-        // { imageLink: bsg4, description: descriptions.bsg4 },
+        { imageLink: bsg4, description: descriptions.bsg4 },
         { imageLink: bsg5, description: descriptions.bsg5 },
         { imageLink: bsg6, description: descriptions.bsg6 },
         { imageLink: bsg7, description: descriptions.bsg7 },
         { imageLink: bsg8, description: descriptions.bsg8 },
         { imageLink: bsg9, description: descriptions.bsg9 },
         { imageLink: bsg10, description: descriptions.bsg10 },
-        { imageLink: bsg11, description: descriptions.bsg11 },
       ],
     },
     {
       label: 'First Prototype Mobile Unit',
       value: 'first prototype mobile unit',
-      images: [{ imageLink: bsg19, description: descriptions.bsg19 }],
+      images: [{ imageLink: bsg11, description: descriptions.bsg11 }],
     },
     {
       label: 'First Full Size Plant',
       value: 'first full size plant',
       images: [
-        { imageLink: bsg12, description: descriptions.bsg12 },
-        { imageLink: bsg13, description: descriptions.bsg13 },
-        { imageLink: bsg14, description: descriptions.bsg14 },
-        { imageLink: bsg15, description: descriptions.bsg15 },
-        { imageLink: bsg16, description: descriptions.bsg16 },
-        { imageLink: bsg17, description: descriptions.bsg17 },
-        { imageLink: bsg18, description: descriptions.bsg18 },
+        { imageLink: bsg12, description: descriptions.bsg11 },
+        { imageLink: bsg13, description: descriptions.bsg12 },
+        { imageLink: bsg14, description: descriptions.bsg13 },
+        { imageLink: bsg15, description: descriptions.bsg14 },
+        { imageLink: bsg16, description: descriptions.bsg15 },
+        { imageLink: bsg17, description: descriptions.bsg16 },
+        { imageLink: bsg18, description: descriptions.bsg17 },
+        { imageLink: bsg19, description: descriptions.bsg18 },
         { imageLink: bsg20, description: descriptions.bsg20 },
         { imageLink: bsg21, description: descriptions.bsg21 },
         { imageLink: bsg22, description: descriptions.bsg22 },

@@ -6,7 +6,6 @@ import bsc1 from '/src/assets/2.brightsandcanada_images/1-aqueous-solution-collo
 import bsc2 from '/src/assets/2.brightsandcanada_images/2-algae-bloom-testing.webp';
 import bsc3 from '/src/assets/2.brightsandcanada_images/3-engineered-carbon.webp';
 import bsc4 from '/src/assets/2.brightsandcanada_images/4-initiator-test.webp';
-// import bsc5 from '/src/assets/2.brightsandcanada_images/5-mobile-unit-combustor-test.mp4';
 
 // Image descriptions
 const descriptions = {
@@ -15,7 +14,6 @@ const descriptions = {
   bsc2: 'Algae Bloom Testing (2022)',
   bsc3: 'Engineered Carbon',
   bsc4: 'Initiator Test (2022)',
-  // bsc5: 'Mobile Unit Combustor Test',
 };
 
 export function BscImages() {
@@ -29,7 +27,6 @@ export function BscImages() {
         { imageLink: bsc2, description: descriptions.bsc2 },
         { imageLink: bsc3, description: descriptions.bsc3 },
         { imageLink: bsc4, description: descriptions.bsc4 },
-        // { imageLink: bsc5, description: descriptions.bsc5 },
       ],
     },
   ];

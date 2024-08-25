@@ -11,6 +11,7 @@ import BrightSandCanada from './pages/2-brightSandCanada/BrightSandCanada.jsx';
 import BrightSandInc from './pages/3-brightSandInc/BrightSandInc.jsx';
 import BrightSandIndustriesInc from './pages/4-brightSandIndustriesInc/BrightSandIndustriesInc.jsx';
 import WhitePapers from './pages/5-whitePapers/WhitePapers.jsx';
+import Consulting from './pages/6-consulting/Consulting.jsx';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             element={<BrightSandIndustriesInc />}
           />
           <Route path="/whitepapers" element={<WhitePapers />} />
+          <Route path="/consulting" element={<Consulting />} />
         </Routes>
       </Router>
     </div>

@@ -25,6 +25,7 @@ const navigation = [
   { name: 'divider-1', divider: true }, // Divider entry
 
   { name: 'White Papers', href: '/whitepapers', current: false },
+  { name: 'Consulting', href: '/consulting', current: false },
 ];
 
 function classNames(...classes) {
