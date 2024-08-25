@@ -17,7 +17,7 @@ const descriptions = {
   bsc3: 'Algae Bloom Testing (2022)',
   bsc4: 'Initiator Test (2022)',
   bsc5: 'Engineered Carbon',
-  bsc6: 'Butter Nut Canker',
+  bsc6: 'Cured Butter Nut Canker',
 };
 
 export function BscImages() {
