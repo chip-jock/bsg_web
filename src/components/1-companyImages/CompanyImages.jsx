@@ -100,7 +100,7 @@ export function CompanyImages() {
     {
       label: 'First Prototype Mobile Unit',
       value: 'first prototype mobile unit',
-      images: [{ imageLink: bsg20, description: descriptions.bsg20 }],
+      images: [{ imageLink: bsg19, description: descriptions.bsg19 }],
     },
     {
       label: 'First Full Size Plant',
@@ -113,7 +113,7 @@ export function CompanyImages() {
         { imageLink: bsg16, description: descriptions.bsg16 },
         { imageLink: bsg17, description: descriptions.bsg17 },
         { imageLink: bsg18, description: descriptions.bsg18 },
-        { imageLink: bsg19, description: descriptions.bsg19 },
+        { imageLink: bsg20, description: descriptions.bsg20 },
         { imageLink: bsg21, description: descriptions.bsg21 },
         { imageLink: bsg22, description: descriptions.bsg22 },
         { imageLink: bsg23, description: descriptions.bsg23 },
