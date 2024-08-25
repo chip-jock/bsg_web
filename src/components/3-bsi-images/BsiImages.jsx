@@ -13,7 +13,7 @@ const descriptions = {
   bsi1: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
   bsi2: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
   bsi3: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
-  bsi4: 'Carbon Black Holdings Landaira Plant, Dunlap (2021)',
+  bsi4: 'Multi-patent (2023)',
 };
 
 export function BsiImages() {
