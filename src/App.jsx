@@ -15,7 +15,7 @@ import Consulting from './pages/6-consulting/Consulting.jsx';
 
 function App() {
   return (
-    <div>
+    <div className="w-screen h-screen">
       <Router>
         <Navbar />
         <Routes>
