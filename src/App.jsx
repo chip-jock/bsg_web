@@ -19,19 +19,29 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/company" element={<Company />} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/company" element={<Company />} />
           <Route
+            exact
             path="/brightsandcanada"
             element={<BrightSandCanada />}
           />
-          <Route path="/brightsandinc" element={<BrightSandInc />} />
           <Route
+            exact
+            path="/brightsandinc"
+            element={<BrightSandInc />}
+          />
+          <Route
+            exact
             path="/brightsandindustriesinc"
             element={<BrightSandIndustriesInc />}
           />
-          <Route path="/whitepapers" element={<WhitePapers />} />
-          <Route path="/consulting" element={<Consulting />} />
+          <Route
+            exact
+            path="/whitepapers"
+            element={<WhitePapers />}
+          />
+          <Route exact path="/consulting" element={<Consulting />} />
         </Routes>
       </Router>
     </div>
