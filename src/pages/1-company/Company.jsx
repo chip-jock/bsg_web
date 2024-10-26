@@ -7,12 +7,14 @@ const Company = () => {
   return (
     <div className="flex">
       <Navbar /> {/* Add the Navbar component */}
-      <div className="flex-grow flex flex-col justify-center items-center min-h-screen py-4 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
+      <div className="flex-grow flex flex-col items-center min-h-screen py-12 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
         <div className="w-full max-w-7xl">
-          <div className="text-lg md:text-xl p-6 md:p-10 bg-white rounded-lg shadow-xl mb-12">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl text-black font-changa font-light text-left tracking-tighter mb-8">
+          <div className="text-center mb-8">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl text-gray-900 font-changa text-left tracking-tighter">
               Bright Sand Group
             </h1>
+          </div>
+          <div className="text-lg md:text-xl p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10 font-semibold">
             <p className="text-lg md:text-xl text-black font-roboto text-left">
               At Bright Sand, our name is more than just a label; it
               is a testament to a legacy of perseverance and vision.
@@ -72,7 +74,6 @@ const Company = () => {
               of our relentless pursuit of a sustainable future.
             </p>
           </div>
-
           <div className="text-lg md:text-xl p-6 md:p-10 bg-white rounded-lg shadow-xl">
             <h2 className="text-4xl text-black font-changa font-thin mb-2">
               What's next for Bright Sand?

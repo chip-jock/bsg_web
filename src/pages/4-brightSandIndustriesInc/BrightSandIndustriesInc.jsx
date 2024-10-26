@@ -11,7 +11,7 @@ const BrightSandIndustriesInc = () => {
       <div className="flex-grow flex flex-col justify-center items-center min-h-screen py-12 px-4 md:px-8 lg:px-16 bg-gray-100 text-gray-900">
         <div className="w-full max-w-7xl">
           <div className="text-center mb-8">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl text-gray-900 font-montserrat text-left tracking-tighter">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl text-gray-900 font-changa text-left tracking-tighter">
               Bright Sand Industries Inc.
             </h1>
           </div>
