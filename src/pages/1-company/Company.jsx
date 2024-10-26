@@ -14,7 +14,7 @@ const Company = () => {
               Bright Sand Group
             </h1>
           </div>
-          <div className="text-lg md:text-xl p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10 font-semibold">
+          <div className="text-lg md:text-xl p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10 ">
             <p className="text-lg md:text-xl text-black font-roboto text-left">
               At Bright Sand, our name is more than just a label; it
               is a testament to a legacy of perseverance and vision.
