@@ -31,33 +31,33 @@ const OurTeam = () => {
             >
               {item.type === 'section' && (
                 <>
-                  <div className="flex">
-                    <div className="w-1/3">
+                  <div className="flex flex-row mb-2">
+                    <div className="w-1/4">
                       <img
                         src={item.image}
                         alt={item.title}
-                        className="w-full max-w-sm mx-auto rounded-lg \"
+                        className="w-full max-w-sm mx-auto rounded-lg mb-4 mr-4"
                       />
                     </div>
 
-                    <div className="w-2/3 ml-12">
+                    <div className="w-3/4 ml-4 lg:ml-8 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-28">
                       <h2 className="text-4xl text-black font-changa font-thin mb-4">
                         {item.title}
                       </h2>
                       <h3 className="text-2xl text-black font-changa font-thin mb-4">
                         {item.subtitle}
                       </h3>
-                      <div className="border-b border-1 border-gray-900 mb-6"></div>
-                      <p className="text-lg md:text-xl text-black font-roboto text-left">
-                        {item.text.split('\n').map((line, i) => (
-                          <span key={i}>
-                            {line}
-                            <br />
-                          </span>
-                        ))}
-                      </p>
+                      <div className="border-b border-1 border-gray-900"></div>
                     </div>
                   </div>
+                  <p className="text-lg md:text-xl text-black font-roboto text-left">
+                    {item.text.split('\n').map((line, i) => (
+                      <span key={i}>
+                        {line}
+                        <br />
+                      </span>
+                    ))}
+                  </p>
                 </>
               )}
             </div>
