@@ -10,6 +10,7 @@ import Company from './pages/1-company/Company.jsx';
 import BrightSandCanada from './pages/2-brightSandCanada/BrightSandCanada.jsx';
 import BrightSandInc from './pages/3-brightSandInc/BrightSandInc.jsx';
 import BrightSandIndustriesInc from './pages/4-brightSandIndustriesInc/BrightSandIndustriesInc.jsx';
+import OurTeam from './pages/7-ourteam/OurTeam.jsx';
 import WhitePapers from './pages/5-whitePapers/WhitePapers.jsx';
 import Consulting from './pages/6-consulting/Consulting.jsx';
 
@@ -36,6 +37,7 @@ function App() {
             path="/brightsandindustriesinc"
             element={<BrightSandIndustriesInc />}
           />
+          <Route exact path="/ourteam" element={<OurTeam />} />
           <Route
             exact
             path="/whitepapers"

@@ -76,7 +76,6 @@ const descriptions = {
 export function CompanyImages() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentTab, setCurrentTab] = useState('humble beginnings');
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   const data = [
     {

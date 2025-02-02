@@ -23,7 +23,7 @@ const navigation = [
     current: false,
   },
   { name: 'divider-1', divider: true }, // Divider entry
-
+  { name: 'Our Team', href: '/ourteam', current: false },
   { name: 'White Papers', href: '/whitepapers', current: false },
   { name: 'Consulting', href: '/consulting', current: false },
 ];

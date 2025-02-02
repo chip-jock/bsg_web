@@ -56,7 +56,7 @@ const WhitePapers = () => (
             White Papers
           </h1>
         </div>
-        <div className="text-lg md:text-xl p-6 md:p-10 bg-white rounded-lg shadow-xl mb-10 font-semibold">
+        <div className="text-lg md:text-xl p-8 md:p-10 bg-white rounded-lg shadow-md mb-10">
           {whitePapers.map((paper, index) => (
             <div key={index} className="mb-4">
               {' '}

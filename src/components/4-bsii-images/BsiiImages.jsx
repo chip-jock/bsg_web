@@ -75,9 +75,10 @@ export function BSIImages() {
               alt="image-photo"
               onClick={() => openLightbox(imageLink, index)}
             />
-            <div className="absolute bottom-0 left-0 w-full p-2 bg-black bg-opacity-50 text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+            {/* IMAGE CAPTION */}
+            {/* <div className="absolute bottom-0 left-0 w-full p-2 bg-black bg-opacity-50 text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
               {description}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
@@ -108,12 +109,14 @@ export function BSIImages() {
             >
               &gt;
             </button>
-            <div
-              className="absolute bottom-4 left-1/2 transform -translate-x-1/2 p-4 bg-black bg-opacity-70 text-white text-center"
-              style={{ width: '80%', maxWidth: '500px' }}
+
+            {/* IMAGE CAPTION */}
+            {/* <div
+            className="absolute bottom-4 left-1/2 transform -translate-x-1/2 p-4 bg-black bg-opacity-70 text-white text-center"
+            style={{ width: '80%', maxWidth: '500px' }}
             >
               {data[0].images[selectedImage.index]?.description || ''}
-            </div>
+            </div> */}
           </div>
         </div>
       )}
